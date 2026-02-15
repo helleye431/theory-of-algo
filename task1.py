@@ -14,11 +14,10 @@ answers = {'Xavier': 'Atlanta',
           'Zeus' : 'Boston',
            'Yolanda': 'Chicago'}
 
-
+flag = False
 for selected_student, selected_hospital in answers.items():
     stud_to_check = hospitals[selected_hospital][:hospitals[selected_hospital].index(selected_student)]
 
-    flag = False
     for student in stud_to_check:
         for hospital in students[student]:
             if hospital == answers[student]:
